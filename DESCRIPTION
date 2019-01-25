@@ -1,0 +1,28 @@
+Package: lepidisthelper
+Title: What the Package Does (One Line, Title Case)
+Version: 0.1.0
+Authors@R: 
+    person(given = "Markus",
+           family = "Dumke",
+           role = c("aut", "cre"),
+           email = "markusdumke@gmail.com")
+Description: What the package does (one paragraph).
+License: What license it uses
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.0
+Imports: 
+    checkmate,
+    data.table,
+    ggplot2,
+    grid,
+    htmltools,
+    leaflet,
+    leaflet.extras,
+    lubridate,
+    magrittr,
+    pool,
+    shiny,
+    stringr,
+    utils
