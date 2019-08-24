@@ -28,9 +28,9 @@ make_popup_sightings <- function(.Data,
     get_latest_sighting_per_observer(.Data) %>%
     head(.n)
 
-  stringr::str_c(Data[, Beobachter],
-                 " ",
-                 Data[, Jahr],
+  stringr::str_c(Data[, Jahr],
+                 " - ",
+                 Data[, Beobachter],
                  collapse = "<br>") %>%
     stringr::str_c("<b>", .tk25.name, "</b></br>", .)
 }

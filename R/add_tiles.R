@@ -8,13 +8,14 @@
 #' @importFrom magrittr "%>%"
 add_tiles <- function(.map, .position = "bottomright") {
   .map %>%
+    addProviderTiles('Hydda.Base') %>%
     addTiles(group = "OSM") %>%
     addProviderTiles("Esri.WorldImagery", group = "Satellit") %>%
     addProviderTiles("Esri.WorldTopoMap", group = "Gelaende") %>%
     # addTiles(urlTemplate = "https://wmts20.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg",
     #          group = "geo.admin Schweiz") %>%
     addLayersControl(
-      baseGroups = c("Gelaende", "Satellit", "OSM"),
+      baseGroups = c("Ohne Beschriftung", "Gelaende", "Satellit", "OSM"),
       position = .position,
       options = layersControlOptions(collapsed = TRUE))
 }
