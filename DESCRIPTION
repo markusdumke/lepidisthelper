@@ -1,6 +1,6 @@
 Package: lepidisthelper
 Title: What the Package Does (One Line, Title Case)
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: 
     person(given = "Markus",
            family = "Dumke",
@@ -11,10 +11,11 @@ License: What license it uses
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 6.1.0
+RoxygenNote: 6.1.1
 Imports: 
     checkmate,
     data.table,
+    fluid,
     ggplot2,
     grid,
     htmltools,
@@ -24,5 +25,6 @@ Imports:
     magrittr,
     pool,
     shiny,
+    shinytoastr,
     stringr,
     utils
